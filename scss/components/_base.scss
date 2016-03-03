@@ -1,33 +1,125 @@
 body {
-  background-color: rgb(185, 223, 174);
+  //background-color: rgb(185, 223, 174);
+  //background: url("http://www.alienresearchcorp.com/space/hd-wallpapers/amazing/img/l/moment-in-space-cvi.jpg") no-repeat center center;
+  background: url("http://www.alienresearchcorp.com/space/hd-wallpapers/amazing/img/l/evil-nebula.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
 }
 
 .person {
   background: rgba(255,255,255, 0.7);
   box-shadow: 0 0 10px #999;
-  padding: 30px;
-  width: 600px;
-  margin: 30px auto;
-
-  p {
-    font-size: 20px;
-    display: block;
-  }
+  padding: 2.5%;
+  width: 50%;
+  margin: auto;
 }
 
 form {
-  margin-top: 100px;
+  padding-top: 3%;
+  input {
+  padding-left: 1%;
+  border-radius: 10px;
+  }
+  button {
+    border-radius: 8px;
+  }
 }
 
 
 
+.msg2 {
+  width: 50%;
+  margin: auto;
+  padding: 2.5%;
+  background-color: black;
+}
 .msg1 {
-  width: 600px;
-  margin: 30px auto;
-  font-size: 30px;
-  padding: 30px;
+  width: 50%;
+  margin: 1% auto;
+  padding: 2.5%;
 }
 
   input {
     margin: .3%;
+}
+
+#top{
+  border-bottom: 5px solid black;
+}
+
+// header {
+//   position: absolute;
+//   background-color: rgba(215, 24, 24, 0.9);
+//   margin-left: -8px;
+//   width: 100%;
+//   top: 0px;
+//   padding: 1%;
+// }
+
+footer {
+  width: 50%;
+  margin: auto;
+  font-size: medium;
+  padding: 2.5%;
+  background-color: rgba(215, 24, 24, 0.9);
+
+  // position: fixed;
+  // margin-left: -8px;
+  // width: 100%;
+  // background-color: rgba(215, 24, 24, 0.9);
+  // bottom: 0px;
+  // padding: 1%;
+
+
+
+}
+
+
+@media only screen and (max-width: 480px){
+body {
+  width: 95%;
+  margin: auto;
+}
+
+.msg2 {
+  width: 95%;
+  margin: auto;
+  font-size: medium;
+  padding: 2.5%;
+  background-color: black;
+  color: white;
+}
+.msg1 {
+  width: 95%;
+  margin: 1% auto;
+  font-size: large;
+  padding: 2.5%;
+}
+.person {
+  background: rgba(255,255,255, 0.7);
+  box-shadow: 0 0 10px #999;
+  padding: 2.5%;
+  width: 95%;
+  margin: auto;
+  p{
+    font-size: medium;
+  }
+}
+
+// header {
+//   margin-left: -10px;
+//   font-size: 12px;
+//   margin-bottom: 1%;
+// }
+footer {
+  width: 95%;
+  margin: 1% auto;
+  font-size: small;
+  padding: 2.5%;
+  //margin-left: -10px;
+
+  //font-size: 12px;
+}
 }

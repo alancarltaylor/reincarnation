@@ -2,3 +2,31 @@ body {
   font-family: helvetica;
   text-align: center;
 }
+.person {
+  p {
+    font-size: x-large;
+    display: block;
+  }
+}
+.msg2 {
+  font-size: x-large;
+  color: white
+}
+
+.msg1{
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+form{
+  font-size: xx-large;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+// header {
+//   font-size: medium;
+// }
+footer {
+  font-size: medium;
+}

@@ -4,6 +4,8 @@ $(function(){
   data = {people: [], counter: 0};
 
     $('button').on('click', function(){
+      $('form').slideUp(5000);
+
       var birthDateMinusOneYear = ($('input[type="date"]').val().slice(0, 4)) - 1;
       if (birthDateMinusOneYear > 999){
       data = {people: [], counter: 0};
@@ -28,7 +30,7 @@ $(function(){
   }
 
   function updateDom() {
-    $('.container').append("<div class='msg1'>First, let us start with the beginning, or at least as far back as this app can see. This is the life you lived 5 lifetimes ago, when you were born as, believe it or not...</div>")
+    $('.container').append("<div class='msg1' id='top'>First, let us start with the beginning, or at least as far back as this app can see. This is the life you lived 5 lifetimes ago, when you were born as, believe it or not...</div>")
 
     var peopleSortedByDeathYear = data.people.sort(function(a,b) {
       return a.deathYear - b.deathYear;
@@ -49,10 +51,11 @@ $(function(){
 
 
       $('.'+idx).append("<p>"+person.bio+"</p>");
-      $('.container').append("<div class='msg1'><p>"+randomMessages[Math.floor(Math.random() * randomMessages.length)]+"</div></p>");
+      $('.container').append("<div class='msg2'><p class="+idx+">"+randomMessages[Math.floor(Math.random() * randomMessages.length)]+"</div>");
 
     })
-    $('.container').append("<div class='msg1'>Yourself, or at least as you were, on <br>"+$('input[type="date"]').val().slice(5, 10)+"-"+$('input[type="date"]').val().slice(0, 4)+"</div>")
+    $('p.4').append("<p>You! At least as you were on <br>"+$('input[type="date"]').val().slice(5, 10)+"-"+$('input[type="date"]').val().slice(0, 4)+"</p>");
+    $('.container').append("<footer>Alan Taylor · About</footer>")
 
   }
 
