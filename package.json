@@ -16,5 +16,7 @@
     "url": "https://github.com/alancarltaylor/reincarnation/issues"
   },
   "homepage": "https://github.com/alancarltaylor/reincarnation#readme",
-  "dependencies": {}
+  "dependencies": {
+    "bluebird": "^3.3.3"
+  }
 }
