@@ -11,11 +11,17 @@ body {
     font-size: 20px;
     display: block; }
 
+form {
+  margin-top: 100px; }
+
 .msg1 {
   width: 600px;
   margin: 30px auto;
   font-size: 30px;
   padding: 30px; }
+
+input {
+  margin: .3%; }
 
 body {
   font-family: helvetica;
