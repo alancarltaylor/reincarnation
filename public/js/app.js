@@ -7,6 +7,8 @@ $(function(){
       $('form').slideUp(5000);
 
       var birthDateMinusOneYear = ($('input[type="date"]').val().slice(0, 4)) - 1;
+      var birthDateWithoutMinusOneYear = $('input[type="date"]').val().slice(0, 4)
+      localStorage.setItem('bYear', birthDateWithoutMinusOneYear)
       if (birthDateMinusOneYear > 999){
       data = {people: [], counter: 0};
       $('.container').empty();
@@ -54,8 +56,8 @@ $(function(){
       $('.container').append("<div class='msg2'><p class="+idx+">"+randomMessages[Math.floor(Math.random() * randomMessages.length)]+"</div>");
 
     })
-    $('p.4').append("<p>You! At least as you were on <br>"+$('input[type="date"]').val().slice(5, 10)+"-"+$('input[type="date"]').val().slice(0, 4)+"</p>");
-    $('.container').append("<footer>Alan Taylor · About</footer>")
+    $('p.4').append("<p>You! At least as you were on <br>"+$('input[type="date"]').val().slice(5, 10)+"-"+localStorage.getItem('bYear')+"</p>");
+    $('.container').append("<footer>Alan Taylor · <a href='https://github.com/alancarltaylor'>Github</a></footer>")
 
   }
 
