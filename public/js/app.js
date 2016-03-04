@@ -15,7 +15,7 @@ $(function(){
       data = {people: [], counter: 0};
       $('.container').empty();
       getPerson(birthDateMinusOneYear);
-    } else {alert ('Your browser may not support html5! Type your birthday in this format, yyyy-mm-dd')}
+    } else {alert ('One of two things is happening, either your were born before 999, or your browser may not support html5! Type your birthday in this format, yyyy-mm-dd')}
 
   });
 
