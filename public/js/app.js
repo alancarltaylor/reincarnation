@@ -5,11 +5,12 @@ $(function(){
   data = {people: [], counter: 0};
 
     $('button').on('click', function(){
-      $('form').slideUp(5000);
+
       var birthDateMinusOneYear = ($('input[type="date"]').val().slice(0, 4)) - 1;
       var birthDateWithoutMinusOneYear = $('input[type="date"]').val().slice(0, 4)
       localStorage.setItem('bYear', birthDateWithoutMinusOneYear)
       if (birthDateMinusOneYear > 999){
+        $('form').slideUp(5000);
       data = {people: [], counter: 0};
       $('.container').empty();
       getPerson(birthDateMinusOneYear);
