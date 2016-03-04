@@ -26,13 +26,17 @@ form {
   width: 50%;
   margin: auto;
   padding: 2.5%;
-  background-color: black;
-}
+  background-color: rgba(6, 16, 60, 0.9);}
 
 .msg1 {
   width: 50%;
   margin: 1% auto;
   padding: 2.5%;
+  background-color: rgba(215, 24, 24, 0.4);       //rgba(6, 16, 60, 0.4);       //rgba(215, 24, 24, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+
 }
 
   input {
@@ -63,7 +67,7 @@ body {
   margin: auto;
   font-size: medium;
   padding: 2.5%;
-  background-color: black;
+  background-color: rgba(6, 16, 60, 0.9);
   color: white;
 }
 
