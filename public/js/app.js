@@ -15,7 +15,7 @@ $(function(){
       data = {people: [], counter: 0};
       $('.container').empty();
       getPerson(birthDateMinusOneYear);
-      } else {alert ('Please type in your real birthday')}
+    } else {alert ('Your browser may not support html5! Type your birthday in this format, yyyy-mm-dd')}
 
   });
 
