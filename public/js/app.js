@@ -5,7 +5,7 @@ $(function(){
 
     $('button').on('click', function(){
       $('form').slideUp(5000);
-
+      $('window').resize();
       var birthDateMinusOneYear = ($('input[type="date"]').val().slice(0, 4)) - 1;
       var birthDateWithoutMinusOneYear = $('input[type="date"]').val().slice(0, 4)
       localStorage.setItem('bYear', birthDateWithoutMinusOneYear)
