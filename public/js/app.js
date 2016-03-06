@@ -10,12 +10,12 @@ $(function(){
       var birthDateMinusOneYear = ($('input[type="date"]').val().slice(0, 4)) - 1;
       var birthDateWithoutMinusOneYear = $('input[type="date"]').val().slice(0, 4)
       localStorage.setItem('bYear', birthDateWithoutMinusOneYear)
-      if (birthDateMinusOneYear > 999){
+      if ((birthDateMinusOneYear > 999)&&(birthDateMinusOneYear < 2015)){
         $('form').slideUp(5000);
       data = {people: [], counter: 0};
       $('.container').empty();
       getPerson(birthDateMinusOneYear);
-    } else {alert ('One of two things is happening, either your were born before 999, or your browser may not support html5! Type your birthday in this format, yyyy-mm-dd')}
+    } else {alert ('One of two things is happening, either you are not using your real birthday, or your browser may not fully support html5! Please type your birthday in this format, yyyy-mm-dd')}
 
   });
 
