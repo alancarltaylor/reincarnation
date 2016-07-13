@@ -1,9 +1,9 @@
 body {
   background: url("http://www.alienresearchcorp.com/space/hd-wallpapers/amazing/img/l/evil-nebula.jpg") no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .person {
@@ -17,8 +17,8 @@ body {
 form {
   padding-top: 3%;
   input {
-  padding-left: 1%;
-  border-radius: 10px;
+    padding-left: 1%;
+    border-radius: 10px;
   }
 }
 
@@ -26,24 +26,23 @@ form {
   width: 50%;
   margin: auto;
   padding: 2.5%;
-  background-color: rgba(6, 16, 60, 0.9);}
+  background-color: rgba(6, 16, 60, 0.9);
+}
 
 .msg1 {
   width: 50%;
   margin: 1% auto;
   padding: 2.5%;
-  background-color: rgba(215, 24, 24, 0.4);       //rgba(6, 16, 60, 0.4);       //rgba(215, 24, 24, 0.9);
+  background-color: rgba(215, 24, 24, 0.4);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
-
 }
 
-  input {
-    margin: .3%;
+input {
+  margin: 0.3%;
 }
 
-#top{
+#top {
   border-bottom: 5px solid black;
 }
 
@@ -55,46 +54,44 @@ footer {
   background-color: rgba(215, 24, 24, 0.9);
 }
 
-
-@media only screen and (max-width: 480px){
-body {
-  width: 95%;
-  margin: auto;
-}
-
-.msg2 {
-  width: 95%;
-  margin: auto;
-  font-size: medium;
-  padding: 2.5%;
-  background-color: rgba(6, 16, 60, 0.9);
-  color: white;
-}
-
-.msg1 {
-  width: 95%;
-  margin: 1% auto;
-  font-size: large;
-  padding: 2.5%;
-}
-
-.person {
-  background: rgba(255,255,255, 0.7);
-  box-shadow: 0 0 10px #999;
-  padding: 2.5%;
-  width: 95%;
-  margin: auto;
-
-  p{
-    font-size: medium;
+@media only screen and (max-width: 480px) {
+  body {
+    width: 95%;
+    margin: auto;
   }
-}
 
-footer {
-  width: 95%;
-  margin: auto;
-  font-size: small;
-  padding: 2.5%;
-}
+  .msg2 {
+    width: 95%;
+    margin: auto;
+    font-size: medium;
+    padding: 2.5%;
+    background-color: rgba(6, 16, 60, 0.9);
+    color: white;
+  }
 
+  .msg1 {
+    width: 95%;
+    margin: 1% auto;
+    font-size: large;
+    padding: 2.5%;
+  }
+
+  .person {
+    background: rgba(255,255,255, 0.7);
+    box-shadow: 0 0 10px #999;
+    padding: 2.5%;
+    width: 95%;
+    margin: auto;
+
+    p {
+      font-size: medium;
+    }
+  }
+
+  footer {
+    width: 95%;
+    margin: auto;
+    font-size: small;
+    padding: 2.5%;
+  }
 }

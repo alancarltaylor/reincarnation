@@ -3,26 +3,31 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .person {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 10px #999;
   padding: 2.5%;
   width: 50%;
-  margin: auto; }
+  margin: auto;
+}
 
 form {
-  padding-top: 3%; }
+  padding-top: 3%;
+}
   form input {
     padding-left: 1%;
-    border-radius: 10px; }
+    border-radius: 10px;
+  }
 
 .msg2 {
   width: 50%;
   margin: auto;
   padding: 2.5%;
-  background-color: rgba(6, 16, 60, 0.9); }
+  background-color: rgba(6, 16, 60, 0.9);
+}
 
 .msg1 {
   width: 50%;
@@ -30,72 +35,92 @@ form {
   padding: 2.5%;
   background-color: rgba(215, 24, 24, 0.4);
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  border-top-right-radius: 10px;
+}
 
 input {
-  margin: .3%; }
+  margin: .3%;
+}
 
 #top {
-  border-bottom: 5px solid black; }
+  border-bottom: 5px solid black;
+}
 
 footer {
   width: 50%;
   margin: auto;
   font-size: medium;
   padding: 2.5%;
-  background-color: rgba(215, 24, 24, 0.9); }
+  background-color: rgba(215, 24, 24, 0.9);
+}
 
 @media only screen and (max-width: 480px) {
+
   body {
     width: 95%;
-    margin: auto; }
+    margin: auto;
+  }
   .msg2 {
     width: 95%;
     margin: auto;
     font-size: medium;
     padding: 2.5%;
     background-color: rgba(6, 16, 60, 0.9);
-    color: white; }
+    color: white;
+  }
   .msg1 {
     width: 95%;
     margin: 1% auto;
     font-size: large;
-    padding: 2.5%; }
+    padding: 2.5%;
+  }
+
   .person {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 10px #999;
     padding: 2.5%;
     width: 95%;
-    margin: auto; }
+    margin: auto;
+  }
     .person p {
-      font-size: medium; }
+      font-size: medium;
+    }
+
   footer {
     width: 95%;
     margin: auto;
     font-size: small;
-    padding: 2.5%; } }
+    padding: 2.5%;
+  }
+}
 
 body {
   font-family: helvetica;
-  text-align: center; }
+  text-align: center;
+}
 
 .person p {
   font-size: x-large;
-  display: block; }
+  display: block;
+}
 
 .msg2 {
   font-size: x-large;
-  color: white; }
+  color: white;
+}
 
 .msg1 {
   font-size: xx-large;
   color: white;
-  text-shadow: 2px 2px black; }
+  text-shadow: 2px 2px black;
+}
 
 form {
   font-size: xx-large;
   color: white;
-  text-shadow: 2px 2px black; }
+  text-shadow: 2px 2px black;
+}
 
 footer {
-  font-size: medium; }
+  font-size: medium;
+}
