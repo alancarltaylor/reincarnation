@@ -9,12 +9,14 @@ app.get('/', function(req, res) {
   res.sendFile('index.html');
 });
 
-
+//This is a function with 8 promises, that is making 4 API calls to Wikipedia to get your past life's name, photo, bio,
+//birthyear, and deathyear
 app.get('/wikipedia/:deathYear', function(req, res) {
 
   getPerson();
 
   function getPerson(){
+
     var deathYear = req.params.deathYear;
     var url = 'https://en.wikipedia.org/w/api.php?&action=query&cmtitle=category:' + deathYear + '%20deaths&list=categorymembers&cmlimit=max&format=json';
 
@@ -24,6 +26,7 @@ app.get('/wikipedia/:deathYear', function(req, res) {
 
     .then(function(response) {
       var arrLen = response.query.categorymembers.length;
+      //This pulls a random person from all the people who died the same year as deathYear
       var randomPerson = response.query.categorymembers[Math.floor(Math.random() * (arrLen-1))];
       var pageId = randomPerson.pageid;
       var name = randomPerson.title;
